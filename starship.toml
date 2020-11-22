@@ -1,0 +1,31 @@
+format = """
+$username$hostname$directory$git_branch
+[> ](bold green)
+"""
+
+add_newline = true
+
+[username]
+format = "[$user]($style) at "
+style_user = "white bold"
+style_root = "black bold"
+disabled = false
+show_always = true
+
+[hostname]
+format =  "[$hostname]($style) in "
+style = "yellow bold"
+ssh_only = false
+disabled = false
+
+[directory]
+format = "[$path]($style) "
+style = "blue bold"
+truncation_length = 8
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = "on [$symbol$branch]($style)"
+style = "purple bold"
+truncation_lenght = 6
+truncation_symbol = ""
